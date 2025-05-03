@@ -2,182 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CallWise Solutions | Where Every Call Counts</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CallWise Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet"/>
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9fafc;
+      background: #f8f9fa;
       color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
+
     header {
-      background-color: #0a3d62;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 600;
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.8em;
+      color: #111;
     }
-    .hero {
-      background: linear-gradient(to right, #38ada9, #0a3d62);
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
+
+    .location {
+      font-size: 0.95em;
+      color: #777;
     }
-    .hero h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2em;
-    }
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .section h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-    .pricing {
+
+    main {
+      flex: 1;
       display: flex;
       justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-    .plan {
-      background-color: white;
-      border-radius: 10px;
-      padding: 30px 20px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-      width: 280px;
-      text-align: left;
-    }
-    .plan h3 {
-      margin-top: 0;
-      color: #0a3d62;
-    }
-    .plan ul {
-      list-style: none;
-      padding: 0;
-    }
-    .plan ul li::before {
-      content: '✔';
-      margin-right: 10px;
-      color: #38ada9;
-    }
-    .cta {
-      background-color: #0a3d62;
-      color: white;
-      padding: 60px 20px;
+      align-items: center;
       text-align: center;
+      padding: 50px 20px;
     }
-    .btn {
+
+    .content {
+      max-width: 700px;
+    }
+
+    .content h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #0c4a6e;
+    }
+
+    .content p {
+      font-size: 1.2em;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .insta-btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 30px;
-      background-color: #38ada9;
+      background: #e1306c;
       color: white;
-      font-weight: 600;
       text-decoration: none;
+      padding: 12px 25px;
       border-radius: 8px;
-      transition: background 0.3s;
+      font-size: 1em;
+      transition: background 0.3s ease;
     }
-    .btn:hover {
-      background-color: #279f98;
+
+    .insta-btn:hover {
+      background: #c91c5f;
     }
+
     footer {
-      background-color: #222;
-      color: white;
-      padding: 30px;
+      background: #111;
+      color: #ddd;
       text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95em;
+    }
+
+    footer .footer-links {
+      margin: 10px 0;
+    }
+
+    footer .footer-links a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer .footer-links a:hover {
+      color: #fff;
+    }
+
+    footer .credit {
+      font-size: 0.8em;
+      color: #777;
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>CallWise Solutions</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="logo">CallWise Solutions</div>
+    <div class="location">Serving All of Canada</div>
   </header>
 
-  <div class="hero">
-    <h1>Never Miss a Call Again</h1>
-    <p>Professional call answering for trades and small businesses. Your clients will always hear a real, friendly voice.</p>
-    <a href="#contact" class="btn">Get Started</a>
-  </div>
-
-  <div class="section" id="services">
-    <h2>Who We Help</h2>
-    <p>We support electricians, plumbers, contractors, HVAC techs, and business owners who can’t afford to miss opportunities. Let us be your front desk.</p>
-  </div>
-
-  <div class="section">
-    <h2>What We Do</h2>
-    <p>Our professional receptionists answer calls in your business name, forward messages instantly, book appointments, and leave a lasting impression on your clients.</p>
-  </div>
-
-  <div class="section">
-    <h2>Why Choose CallWise?</h2>
-    <p>Friendly, reliable, and built for businesses on the move. No scripts. No bots. Just real people who care about your growth.</p>
-  </div>
-
-  <div class="section" id="pricing">
-    <h2>Pricing Plans</h2>
-    <div class="pricing">
-      <div class="plan">
-        <h3>Starter Plan</h3>
-        <p><strong>$199/month</strong></p>
-        <ul>
-          <li>Up to 5 calls/day</li>
-          <li>Custom business greeting</li>
-          <li>Instant message forwarding</li>
-        </ul>
-      </div>
-      <div class="plan">
-        <h3>Pro Plan</h3>
-        <p><strong>$349/month</strong></p>
-        <ul>
-          <li>Up to 10 calls/day</li>
-          <li>Live call transfers</li>
-          <li>Appointment scheduling</li>
-        </ul>
-      </div>
-      <div class="plan">
-        <h3>Custom Plan</h3>
-        <p><strong>Contact Us</strong></p>
-        <ul>
-          <li>Tailored call volumes</li>
-          <li>Full receptionist support</li>
-          <li>Custom scripts & actions</li>
-        </ul>
-      </div>
+  <main>
+    <div class="content">
+      <h1>Smart Reception for Small Businesses</h1>
+      <p>We handle your calls like your in-house receptionist — for a fraction of the cost. Focus on growing your business while we manage your calls professionally.</p>
+      <a class="insta-btn" href="https://instagram.com/yourhandle" target="_blank">Follow Us on Instagram</a>
     </div>
-  </div>
-
-  <div class="cta" id="contact">
-    <h2>Let's Grow Your Business</h2>
-    <p>Sound professional. Save time. Never miss a lead.</p>
-    <a href="mailto:info@callwisesolutions.ca" class="btn">Get in Touch</a>
-  </div>
+  </main>
 
   <footer>
-    <p>&copy; 2025 CallWise Solutions | Where Every Call Counts</p>
+    <div>Have questions? Reach out to us at <a href="mailto:info@callwisesolutions.com">info@callwisesolutions.com</a></div>
+    <div class="footer-links">
+      <a href="#">Home</a> | 
+      <a href="#">Services</a> | 
+      <a href="#">Contact</a> | 
+      <a href="#">Instagram</a>
+    </div>
+    <div class="credit">
+      &copy; 2025 CallWise Solutions. All rights reserved.
+    </div>
   </footer>
 </body>
 </html>
