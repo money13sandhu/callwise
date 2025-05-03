@@ -16,7 +16,6 @@
       flex-direction: column;
       min-height: 100vh;
     }
-
     header {
       display: flex;
       justify-content: space-between;
@@ -25,43 +24,37 @@
       padding: 20px 40px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
-
     .logo {
       font-weight: 700;
       font-size: 1.8em;
       color: #111;
     }
-
     .location {
       font-size: 0.95em;
       color: #777;
     }
-
     main {
       flex: 1;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
       text-align: center;
       padding: 50px 20px;
     }
-
     .content {
       max-width: 700px;
+      margin-bottom: 50px;
     }
-
     .content h1 {
       font-size: 2.5em;
       margin-bottom: 20px;
       color: #0c4a6e;
     }
-
     .content p {
       font-size: 1.2em;
       color: #444;
       margin-bottom: 30px;
     }
-
     .insta-btn {
       display: inline-block;
       background: #e1306c;
@@ -72,11 +65,46 @@
       font-size: 1em;
       transition: background 0.3s ease;
     }
-
     .insta-btn:hover {
       background: #c91c5f;
     }
-
+    .pricing-section {
+      width: 100%;
+      max-width: 1000px;
+      text-align: center;
+    }
+    .pricing-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #0c4a6e;
+    }
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .plan {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 280px;
+    }
+    .plan h3 {
+      font-size: 1.5em;
+      color: #333;
+    }
+    .plan p {
+      font-size: 1em;
+      color: #555;
+      margin: 10px 0;
+    }
+    .plan .price {
+      font-size: 1.8em;
+      color: #0c4a6e;
+      margin: 15px 0;
+    }
     footer {
       background: #111;
       color: #ddd;
@@ -84,21 +112,17 @@
       padding: 30px 20px;
       font-size: 0.95em;
     }
-
     footer .footer-links {
       margin: 10px 0;
     }
-
     footer .footer-links a {
       color: #ccc;
       margin: 0 10px;
       text-decoration: none;
     }
-
     footer .footer-links a:hover {
       color: #fff;
     }
-
     footer .credit {
       font-size: 0.8em;
       color: #777;
@@ -115,16 +139,44 @@
   <main>
     <div class="content">
       <h1>Smart Reception for Small Businesses</h1>
-      <p>We handle your calls like your in-house receptionist — for a fraction of the cost. Focus on growing your business while we manage your calls professionally.</p>
+      <p>Let us answer your calls with professionalism and care. Perfect for contractors, freelancers, and small companies that need a receptionist without the overhead cost.</p>
       <a class="insta-btn" href="https://instagram.com/yourhandle" target="_blank">Follow Us on Instagram</a>
+    </div>
+
+    <div class="pricing-section">
+      <h2>Our Pricing Plans</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>Basic</h3>
+          <p>Up to 5 calls/day</p>
+          <p>Personalized Greeting</p>
+          <p>Message Forwarding</p>
+          <div class="price">$199/month</div>
+        </div>
+        <div class="plan">
+          <h3>Professional</h3>
+          <p>Up to 10 calls/day</p>
+          <p>Appointment Scheduling</p>
+          <p>Priority Call Handling</p>
+          <div class="price">$349/month</div>
+        </div>
+        <div class="plan">
+          <h3>Premium</h3>
+          <p>Unlimited Calls</p>
+          <p>Custom Scripts & CRM Logs</p>
+          <p>Live Chat Add-on</p>
+          <div class="price">$499/month</div>
+        </div>
+      </div>
     </div>
   </main>
 
   <footer>
-    <div>Have questions? Reach out to us at <a href="mailto:info@callwisesolutions.com">info@callwisesolutions.com</a></div>
+    <div>Questions? Reach us at <a href="mailto:info@callwisesolutions.com">info@callwisesolutions.com</a></div>
     <div class="footer-links">
       <a href="#">Home</a> | 
       <a href="#">Services</a> | 
+      <a href="#">Pricing</a> | 
       <a href="#">Contact</a> | 
       <a href="#">Instagram</a>
     </div>
